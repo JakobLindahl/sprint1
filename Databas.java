@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Databas {
 
-    private final Djur Sixten = new Hund(5, "Sixten");
-    private final Djur Dogge = new Hund(10, "Dogge");
-    private final Djur Venus = new Katt(5, "Venus");
-    private final Djur Ove = new Katt(3, "Ove");
-    private final Djur Hypno = new Orm(1, "Hypno");
+    private final IDjur Sixten = new Hund(5, "Sixten");
+    private final IDjur Dogge = new Hund(10, "Dogge");
+    private final IDjur Venus = new Katt(5, "Venus");
+    private final IDjur Ove = new Katt(3, "Ove");
+    private final IDjur Hypno = new Orm(1, "Hypno");
 
     List<IDjur> getAllaDjur() {
 

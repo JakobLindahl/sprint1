@@ -9,7 +9,7 @@ public class Sprint1 {
 
     public void fråga() {
         while (true) {
-            String val = JOptionPane.showInputDialog("vilket djur ska få mat?");
+            String val = JOptionPane.showInputDialog("vilket djur ska få mat idag?");
             if (val == null || val.equals("")) {
                 System.exit(0);
             }
@@ -19,7 +19,7 @@ public class Sprint1 {
                 if (djur.getNamn().equalsIgnoreCase(val)) {
                     djur.måltid();
                     djuretfinns = true;
-                }
+                }//if c
             }//loop c
             if (!djuretfinns) {
                 System.out.println("Djuret finns inte");

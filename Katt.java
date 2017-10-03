@@ -16,5 +16,4 @@ public class Katt extends Djur {
     public void måltid() {
         JOptionPane.showMessageDialog(null,getNamn() + " ska ha " + (int) portion() + "g kattfoder");
     }
-
 }

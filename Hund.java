@@ -8,10 +8,8 @@ public class Hund extends Djur {
         super(vikt, namn);
     }
 
-    
     public double portion() {
         return getVikt() * 1000 / 100;
-
     }
 
     @Override

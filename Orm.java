@@ -4,7 +4,6 @@ import javax.swing.JOptionPane;
 
 public class Orm extends Djur {
     private static final double ORMPELLETS = 20;
-
     
     Orm(int vikt, String namn) {
         super(vikt, namn);
