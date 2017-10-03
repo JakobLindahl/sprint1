@@ -1,6 +1,7 @@
 package sprint1;
 
 abstract class Djur implements IDjur {
+
     //inkapsling av vikt, går ej att se utanför superklass och subklasserna
     private double vikt;
     private String namn; //namnet går ej att ändra men går att se med getnamn
@@ -9,6 +10,7 @@ abstract class Djur implements IDjur {
         setVikt(vikt);
         setNamn(namn);
     }
+
     private void setVikt(double vikt) {
         this.vikt = vikt;
     }
@@ -16,20 +18,24 @@ abstract class Djur implements IDjur {
     private void setNamn(String namn) {
         this.namn = namn;
     }
+
     //dynamisk bindning då ifall metoden ej hittas
     //i en subklass hittas den i superklassen här
     @Override
     public void måltid() {
         System.out.println("Finns ingen måltid för det här djuret");
     }
+
     protected double getVikt() {
         return vikt;
     }
+
     //dynamisk bindning då metoden ej finns i subklasserna och metoden hittas här
     @Override
     public String getNamn() {
         return namn;
     }
+
     //alla djur måste ha en portion!
     protected abstract double portion();
 }
