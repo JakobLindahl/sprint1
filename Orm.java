@@ -1,19 +1,22 @@
 package sprint1;
 
-public class Orm extends Djur {
+import javax.swing.JOptionPane;
 
-    public Orm(int vikt, String namn) {
+public class Orm extends Djur {
+    private static final double ORMPELLETS = 20;
+
+    
+    Orm(int vikt, String namn) {
         super(vikt, namn);
     }
 
-    @Override
-    public double hurMycketMat() {
-        return 20;
+    public double portion() {
+        return ORMPELLETS;
     }
-
+    
+    
     @Override
     public void måltid() {
-        System.out.println(getNamn() + " ska ha " + (int) hurMycketMat() + "g ormpellets");
+        JOptionPane.showMessageDialog(null, getNamn() + " ska ha " + (int)portion() + "g ormpellets");
     }
-
 }

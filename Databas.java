@@ -11,9 +11,9 @@ public class Databas {
     private final Djur Ove = new Katt(3, "Ove");
     private final Djur Hypno = new Orm(1, "Hypno");
 
-    List<Djur> getAllaDjur() {
+    List<IDjur> getAllaDjur() {
 
-        List<Djur> allDjur = new ArrayList<>();
+        List<IDjur> allDjur = new ArrayList<>();
         allDjur.add(Sixten);
         allDjur.add(Dogge);
         allDjur.add(Venus);

@@ -1,19 +1,22 @@
 package sprint1;
 
+import javax.swing.JOptionPane;
+
 public class Hund extends Djur {
 
-    public Hund(int vikt, String namn) {
+    Hund(double vikt, String namn) {
         super(vikt, namn);
     }
 
-    @Override
-    public double hurMycketMat() {
+    
+    public double portion() {
         return getVikt() * 1000 / 100;
+
     }
 
     @Override
     public void måltid() {
-        System.out.println(getNamn() + " ska ha " + (int) hurMycketMat() + "g hundfoder");
+        JOptionPane.showMessageDialog(null, getNamn() + " ska ha " + (int) portion() + "g hundfoder");
     }
 
 }
