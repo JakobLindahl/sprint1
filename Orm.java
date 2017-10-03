@@ -1,6 +1,6 @@
 package sprint1;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Orm extends Djur {
     private static final double ORMPELLETS = 20;
@@ -9,7 +9,8 @@ public class Orm extends Djur {
         super(vikt, namn);
     }
 
-    private double portion() {
+    @Override
+    protected double portion() {
         return ORMPELLETS;
     }
     

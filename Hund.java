@@ -1,6 +1,6 @@
 package sprint1;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class Hund extends Djur {
 
@@ -8,7 +8,8 @@ public class Hund extends Djur {
         super(vikt, namn);
     }
 
-    private double portion() {
+    @Override
+    protected double portion() {
         return getVikt() * 1000 / 100;
     }
 

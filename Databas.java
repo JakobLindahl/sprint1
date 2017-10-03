@@ -1,7 +1,6 @@
 package sprint1;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Databas {
 
@@ -13,13 +12,13 @@ public class Databas {
 
     List<IDjur> getAllaDjur() {
 
-        List<IDjur> allDjur = new ArrayList<>();
-        allDjur.add(Sixten);
-        allDjur.add(Dogge);
-        allDjur.add(Venus);
-        allDjur.add(Ove);
-        allDjur.add(Hypno);
+        List<IDjur> allaDjur = new ArrayList<>();
+        allaDjur.add(Sixten);
+        allaDjur.add(Dogge);
+        allaDjur.add(Venus);
+        allaDjur.add(Ove);
+        allaDjur.add(Hypno);
 
-        return allDjur;
+        return allaDjur;
     }
 }
