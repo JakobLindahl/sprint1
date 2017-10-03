@@ -9,7 +9,6 @@ abstract class Djur implements IDjur {
         setVikt(vikt);
         setNamn(namn);
     }
-    //går bara att nås via konstruktorn då klassen är abstract
     private void setVikt(double vikt) {
         this.vikt = vikt;
     }
@@ -23,7 +22,6 @@ abstract class Djur implements IDjur {
     public void måltid() {
         System.out.println("Finns ingen måltid för det här djuret");
     }
-    //protected för att metoden inte ska kunna ses utanför superklassen och sub klasserna
     protected double getVikt() {
         return vikt;
     }
