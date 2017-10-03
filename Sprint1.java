@@ -16,7 +16,7 @@ public class Sprint1 {
 
             boolean djuretfinns = false;
             for (IDjur djur : alladjur) {
-                if (djur.getNamn().equals(val)) {
+                if (djur.getNamn().equalsIgnoreCase(val)) {
                     djur.måltid();
                     djuretfinns = true;
                 }
@@ -27,14 +27,14 @@ public class Sprint1 {
         }//while true c
     }//fråga c
 
-    public void databas() {
+    public void initiera() {
         Databas databas = new Databas();
         alladjur = databas.getAllaDjur();
         fråga();
     }//databas c
-    
+
     public static void main(String[] args) {
         Sprint1 prog = new Sprint1();
-        prog.databas();
+        prog.initiera();
     }//main c
 }

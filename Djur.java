@@ -6,7 +6,15 @@ abstract class Djur implements IDjur {
     private String namn;
 
     Djur(double vikt, String namn) {
+        setVikt(vikt);
+        setNamn(namn);
+    }
+
+    private void setVikt(double vikt) {
         this.vikt = vikt;
+    }
+
+    private void setNamn(String namn) {
         this.namn = namn;
     }
 
@@ -14,7 +22,7 @@ abstract class Djur implements IDjur {
     public void måltid() {
     }
 
-    public double getVikt() {
+    protected double getVikt() {
         return vikt;
     }
 
