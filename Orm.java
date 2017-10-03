@@ -9,7 +9,7 @@ public class Orm extends Djur {
         super(vikt, namn);
     }
 
-    public double portion() {
+    private double portion() {
         return ORMPELLETS;
     }
     

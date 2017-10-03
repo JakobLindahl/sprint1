@@ -8,7 +8,7 @@ public class Hund extends Djur {
         super(vikt, namn);
     }
 
-    public double portion() {
+    private double portion() {
         return getVikt() * 1000 / 100;
     }
 
@@ -16,5 +16,4 @@ public class Hund extends Djur {
     public void måltid() {
         JOptionPane.showMessageDialog(null, getNamn() + " ska ha " + (int) portion() + "g hundfoder");
     }
-
 }

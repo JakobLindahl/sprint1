@@ -8,7 +8,7 @@ public class Katt extends Djur {
         super(vikt, namn);
     }
 
-    public double portion() {
+    private double portion() {
         return getVikt() * 1000 / 150;
     }
 
