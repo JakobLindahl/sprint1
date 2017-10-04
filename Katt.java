@@ -8,13 +8,12 @@ public class Katt extends Djur {
         super(vikt, namn);
     }
 
-    @Override
-    protected double portion() {
+    private double portion() {
         return getVikt() * 1000 / 150;
     }
 
     @Override
-    public void måltid() {
-        JOptionPane.showMessageDialog(null,getNamn() + " ska ha " + (int) portion() + "g kattfoder");
+    public void printMåltid() {
+        JOptionPane.showMessageDialog(null, getNamn() + " ska ha " + (int) portion() + "g kattfoder");
     }
 }

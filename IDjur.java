@@ -4,5 +4,5 @@ interface IDjur {
 
     String getNamn();
 
-    void måltid();
+    void printMåltid();
 }

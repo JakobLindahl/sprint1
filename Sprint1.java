@@ -17,7 +17,7 @@ public class Sprint1 {
 
             for (IDjur djur : allaDjur) {
                 if (djur.getNamn().equalsIgnoreCase(val)) {
-                    djur.måltid();
+                    djur.printMåltid();
                     djuretfinns = true;
                 }//if c
             } //loop c

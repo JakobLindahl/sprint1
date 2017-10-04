@@ -28,7 +28,4 @@ abstract class Djur implements IDjur {
     public String getNamn() {
         return namn;
     }
-
-    //alla djur måste ha en portion!
-    protected abstract double portion();
 }
