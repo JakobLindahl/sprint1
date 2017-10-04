@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Databas {
 
-    private final IDjur Sixten = new Hund(5, "Sixten");
-    private final IDjur Dogge = new Hund(10, "Dogge");
-    private final IDjur Venus = new Katt(5, "Venus");
-    private final IDjur Ove = new Katt(3, "Ove");
-    private final IDjur Hypno = new Orm(1, "Hypno");
+    private final Hund Sixten = new Hund(5, "Sixten");
+    private final Hund Dogge = new Hund(10, "Dogge");
+    private final Katt Venus = new Katt(5, "Venus");
+    private final Katt Ove = new Katt(3, "Ove");
+    private final Orm Hypno = new Orm(1, "Hypno");
 
     List<IDjur> getAllaDjur() {
 
