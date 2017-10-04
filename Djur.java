@@ -3,22 +3,13 @@ package sprint1;
 abstract class Djur implements IDjur {
 
     //inkapsling av vikt, går ej att se utanför superklass och subklasserna
-    private double vikt;
-    private String namn; //namnet går ej att ändra men går att se med getnamn
+    private final double vikt;
+    private final String namn; //namnet går ej att ändra men går att se med getnamn
 
     Djur(double vikt, String namn) {
-        setVikt(vikt);
-        setNamn(namn);
-    }
-
-    private void setVikt(double vikt) {
         this.vikt = vikt;
-    }
-
-    private void setNamn(String namn) {
         this.namn = namn;
     }
-
     protected double getVikt() {
         return vikt;
     }
