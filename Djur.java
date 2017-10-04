@@ -19,13 +19,6 @@ abstract class Djur implements IDjur {
         this.namn = namn;
     }
 
-    //dynamisk bindning då ifall metoden ej hittas
-    //i en subklass hittas den i superklassen här
-    @Override
-    public void måltid() {
-        System.out.println("Finns ingen måltid för det här djuret");
-    }
-
     protected double getVikt() {
         return vikt;
     }
