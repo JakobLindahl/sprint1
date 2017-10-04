@@ -22,7 +22,7 @@ public class Sprint1 {
                 }//if c
             } //loop c
             if (!djuretfinns) {
-                System.out.println("Djuret finns inte");
+                JOptionPane.showMessageDialog(null, "Djuret finns inte");
             }//if c
         }//while true c
     }//fråga c
